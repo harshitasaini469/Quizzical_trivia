@@ -1,38 +1,134 @@
 .App {
-  text-align: center;
+    padding: 8px;
+    background-color: #E5E5E5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 50vw;
+    height: 90vh;
+    padding: 25px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #4D5B9E;
+    background-color: #F5F7FB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.que-div {
+    color: #293264;
+    max-width: 85%;
+    margin: auto;
+    height: 14vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    margin-top: 12px;
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    color: #293264;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 37px;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.que-div>h2 {
+    font-size: 1.2vw;
+    margin-bottom: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.choice-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.list-item {
+    border: 1px solid #4D5B9E;
+    background-color: #F5F7FB;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1vw;
+    margin: 5px;
+}
+
+button {
+    background-color: #4D5B9E;
+    border-radius: 10px;
+    padding: 12px;
+    color: #F5F7FB;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.score-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 1.5vw;
+    line-height: 15px;
+    text-align: center;
+    color: #293264;
+}
+
+.yellowblob {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.imgStyle1 {
+    width: 149px;
+    height: 140px;
+}
+
+.imgStyle2 {
+    width: 119px;
+    height: 115px;
+}
+
+.blueblob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.is-Clicked {
+    background-color: #D6DBF5;
+}
+
+.isRight {
+    background-color: #94D7A2;
+}
+
+.not-clicked {
+    color: #F5F7FB;
+}
+
+.isWrong {
+    background-color: #F8BCBC;
 }
